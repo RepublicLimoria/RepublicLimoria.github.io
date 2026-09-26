@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>লিমোরিয়া প্রজাতন্ত্র — সম্পূর্ণ পরিচিতি</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --green:#0f5132;--navy:#0a1f44;--deep:#061530;
+  --gold:#c9a227;--goldb:#e8c556;--cream:#faf8f3;
+  --white:#ffffff;--text:#1a2233;--muted:#5a6b85;--border:#e4e8f0;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Hind Siliguri','Noto Serif Bengali',serif;
+  background:var(--cream);color:var(--text);line-height:1.85;
+  overflow-x:hidden;
+}
+.progress-bar{
+  position:fixed;top:0;left:0;height:4px;width:0%;
+  background:linear-gradient(90deg,#0f5132,#c9a227,#e8c556);
+  z-index:9999;transition:width .1s;
+  box-shadow:0 0 12px rgba(232,197,86,.6);
+}
+.art-header{
+  position:sticky;top:0;
+  background:rgba(10,31,68,.95);backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(201,162,39,.3);
+  z-index:1000;padding:14px 30px;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:14px;flex-wrap:wrap;
+}
+.art-back{
+  color:#e8c556;text-decoration:none;font-size:.9rem;
+  display:flex;align-items:center;gap:8px;
+  padding:8px 16px;border:1px solid rgba(201,162,39,.4);
+  border-radius:50px;transition:.3s;font-weight:600;
+}
+.art-back:hover{background:#e8c556;color:#061530;transform:translateX(-3px)}
+.art-header h1{
+  color:#fff;font-size:1rem;letter-spacing:2px;
+  font-family:'Cormorant Garamond',serif;
+}
+.art-hero{
+  background:linear-gradient(135deg,#061530,#0a1f44 40%,#0f5132);
+  color:#fff;padding:90px 30px 70px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.art-hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    radial-gradient(circle at 20% 30%,rgba(201,162,39,.2),transparent 45%),
+    radial-gradient(circle at 80% 70%,rgba(26,122,74,.4),transparent 50%);
+}
+.art-hero .inner{position:relative;z-index:2;max-width:900px;margin:0 auto}
+.art-hero .badge{
+  display:inline-block;font-size:.72rem;letter-spacing:4px;
+  text-transform:uppercase;color:#e8c556;
+  padding:8px 20px;border:1px solid rgba(201,162,39,.4);
+  border-radius:50px;margin-bottom:24px;
+}
+.art-hero h1{
+  font-size:3rem;font-family:'Noto Serif Bengali',serif;
+  margin-bottom:20px;line-height:1.2;font-weight:700;
+}
+.art-hero .subtitle{
+  font-size:1.15rem;color:#cdd8ec;
+  max-width:700px;margin:0 auto 30px;
+}
+.art-meta{
+  display:flex;gap:24px;justify-content:center;flex-wrap:wrap;
+  font-size:.85rem;color:#9fb0cc;
+}
+.art-meta span{display:flex;align-items:center;gap:8px}
+.art-container{max-width:820px;margin:0 auto;padding:60px 30px 100px}
+.art-container h2{
+  font-family:'Noto Serif Bengali',serif;
+  font-size:2rem;color:var(--navy);
+  margin:60px 0 24px;padding-bottom:14px;
+  border-bottom:3px solid var(--gold);
+  position:relative;font-weight:700;line-height:1.3;
+}
+.art-container h2:first-child{margin-top:0}
+.art-container h2::before{
+  content:'◆';color:var(--gold);margin-right:12px;font-size:1.4rem;
+}
+.art-container h3{
+  font-family:'Noto Serif Bengali',serif;
+  font-size:1.4rem;color:var(--green);
+  margin:36px 0 16px;font-weight:700;
+}
+.art-container p{
+  font-size:1.05rem;color:#2a3342;
+  margin-bottom:22px;text-align:justify;line-height:1.9;
+}
+.art-container p strong{color:var(--navy);font-weight:700}
+.art-container p em{color:var(--green);font-style:italic}
+.lead{
+  font-size:1.2rem !important;color:var(--navy) !important;
+  font-weight:500;border-left:5px solid var(--gold);
+  padding-left:22px;margin-bottom:34px !important;
+  line-height:1.8 !important;text-align:left !important;
+}
+.pullquote{
+  background:linear-gradient(135deg,rgba(201,162,39,.08),rgba(15,81,50,.05));
+  border-left:4px solid var(--gold);
+  border-radius:0 12px 12px 0;
+  padding:26px 30px;margin:34px 0;
+  font-size:1.15rem;font-style:italic;
+  color:var(--navy);font-family:'Noto Serif Bengali',serif;
+  line-height:1.8;position:relative;
+}
+.pullquote::before{
+  content:'"';position:absolute;top:-10px;left:14px;
+  font-size:5rem;color:rgba(201,162,39,.25);
+  font-family:'Cormorant Garamond',serif;line-height:1;
+}
+.pullquote .source{
+  display:block;margin-top:14px;font-size:.85rem;
+  color:var(--muted);font-style:normal;
+  font-family:'Hind Siliguri',sans-serif;font-weight:600;
+}
+.info-box{
+  background:var(--white);border-radius:12px;
+  padding:28px 30px;margin:30px 0;
+  border-left:4px solid var(--green);
+  box-shadow:0 6px 24px -8px rgba(10,31,68,.15);
+}
+.info-box h4{
+  color:var(--navy);font-family:'Noto Serif Bengali',serif;
+  font-size:1.15rem;margin-bottom:14px;
+  display:flex;align-items:center;gap:10px;
+}
+.info-box ul{list-style:none;padding:0}
+.info-box li{
+  padding:9px 0 9px 28px;position:relative;
+  color:#2a3342;font-size:1rem;
+  border-bottom:1px solid var(--border);
+}
+.info-box li:last-child{border-bottom:none}
+.info-box li::before{
+  content:'▸';position:absolute;left:6px;
+  color:var(--gold);font-weight:bold;font-size:1.1rem;
+}
+.info-box li strong{color:var(--navy)}
+.stats-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:16px;margin:34px 0;
+}
+.stat-item{
+  background:linear-gradient(135deg,#0a1f44,#0f5132);
+  color:#fff;border-radius:12px;padding:26px 20px;
+  text-align:center;
+  box-shadow:0 12px 30px -10px rgba(10,31,68,.4);
+  border:1px solid rgba(201,162,39,.25);
+}
+.stat-item .num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.4rem;font-weight:700;
+  color:#e8c556;line-height:1;margin-bottom:8px;
+}
+.stat-item .label{
+  font-size:.85rem;color:#cdd8ec;letter-spacing:.5px;
+}
+.timeline{position:relative;padding:20px 0 20px 40px;margin:34px 0}
+.timeline::before{
+  content:'';position:absolute;left:14px;top:0;bottom:0;
+  width:3px;background:linear-gradient(180deg,var(--gold),var(--green),var(--navy));
+  border-radius:3px;
+}
+.timeline-item{position:relative;margin-bottom:32px;padding-left:24px}
+.timeline-item:last-child{margin-bottom:0}
+.timeline-item::before{
+  content:'';position:absolute;left:-33px;top:6px;
+  width:16px;height:16px;background:var(--cream);
+  border:3px solid var(--gold);border-radius:50%;
+  box-shadow:0 0 0 4px rgba(201,162,39,.15);
+}
+.timeline-year{
+  display:inline-block;
+  background:linear-gradient(135deg,#e8c556,#c9a227);
+  color:#061530;font-weight:700;font-size:.85rem;
+  padding:4px 14px;border-radius:50px;
+  margin-bottom:10px;letter-spacing:.5px;
+}
+.timeline-item h4{
+  font-family:'Noto Serif Bengali',serif;
+  color:var(--navy);font-size:1.15rem;
+  margin-bottom:8px;font-weight:700;
+}
+.timeline-item p{
+  font-size:.98rem;margin-bottom:0;
+  color:#3a4456;text-align:left;
+}
+.gov-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;margin:30px 0;
+}
+.gov-card{
+  background:var(--white);border-radius:12px;
+  padding:28px 24px;text-align:center;
+  border:1px solid var(--border);
+  transition:.3s;border-top:4px solid var(--gold);
+}
+.gov-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px -12px rgba(10,31,68,.2);
+  border-top-color:var(--green);
+}
+.gov-card .icon{font-size:2.6rem;margin-bottom:14px;display:block}
+.gov-card h4{
+  font-family:'Noto Serif Bengali',serif;
+  color:var(--navy);font-size:1.15rem;
+  margin-bottom:12px;font-weight:700;
+}
+.gov-card p{
+  font-size:.92rem;color:var(--muted);
+  text-align:center;margin:0;line-height:1.7;
+}
+.symbols-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:18px;margin:30px 0;
+}
+.symbol-card{
+  background:var(--white);border-radius:12px;
+  padding:24px 18px;text-align:center;
+  border:1px solid var(--border);transition:.3s;
+}
+.symbol-card:hover{
+  border-color:var(--gold);transform:translateY(-4px);
+  box-shadow:0 15px 35px -12px rgba(201,162,39,.3);
+}
+.symbol-card .emoji{font-size:2.4rem;margin-bottom:12px;display:block}
+.symbol-card h5{
+  font-family:'Noto Serif Bengali',serif;
+  color:var(--navy);font-size:1rem;
+  margin-bottom:6px;font-weight:700;
+}
+.symbol-card p{
+  font-size:.82rem;color:var(--muted);
+  text-align:center;margin:0;line-height:1.6;
+}
+.values-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;margin:30px 0;
+}
+.value-card{
+  background:linear-gradient(135deg,#0a1f44,#0f5132);
+  color:#fff;border-radius:14px;
+  padding:32px 26px;
+  border:1px solid rgba(201,162,39,.3);
+  box-shadow:0 18px 40px -12px rgba(10,31,68,.35);
+  transition:.3s;
+}
+.value-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 25px 50px -12px rgba(10,31,68,.5);
+  border-color:rgba(232,197,86,.6);
+}
+.value-card .v-icon{
+  font-size:2.2rem;margin-bottom:16px;display:block;
+}
+.value-card h4{
+  font-family:'Noto Serif Bengali',serif;
+  font-size:1.2rem;color:#e8c556;
+  margin-bottom:12px;font-weight:700;
+}
+.value-card p{
+  font-size:.94rem;color:#cdd8ec;
+  margin:0;text-align:left;line-height:1.75;
+}
+.provinces-list{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:14px;margin:26px 0;
+}
+.province-item{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-left:4px solid var(--gold);
+  border-radius:8px;
+  padding:16px 20px;
+  transition:.3s;
+}
+.province-item:hover{
+  transform:translateX(6px);
+  box-shadow:0 10px 25px -10px rgba(201,162,39,.3);
+}
+.province-item h5{
+  color:var(--navy);
+  font-family:'Noto Serif Bengali',serif;
+  font-size:1rem;
+  margin-bottom:6px;
+  font-weight:700;
+}
+.province-item p{
+  font-size:.85rem;
+  color:var(--muted);
+  margin:0;
+  text-align:left;
+  line-height:1.6;
+}
+.art-footer{
+  background:linear-gradient(135deg,#061530,#0f5132);
+  color:#cdd8ec;padding:60px 30px;text-align:center;
+}
+.art-footer .flag-line{font-size:2rem;margin-bottom:20px}
+.art-footer p{
+  max-width:600px;margin:0 auto 24px;
+  font-size:1rem;line-height:1.8;
+}
+.art-footer .btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#e8c556,#c9a227);
+  color:#061530;padding:14px 32px;
+  border-radius:50px;text-decoration:none;
+  font-weight:700;letter-spacing:1px;
+  transition:.3s;font-size:.9rem;
+  box-shadow:0 10px 25px -6px rgba(201,162,39,.5);
+}
+.art-footer .btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 35px -6px rgba(201,162,39,.7);
+}
+#top{
+  position:fixed;bottom:28px;right:28px;
+  width:48px;height:48px;
+  background:linear-gradient(135deg,#e8c556,#c9a227);
+  color:#061530;border:none;border-radius:50%;
+  font-size:1.2rem;cursor:pointer;
+  box-shadow:0 10px 28px -6px rgba(201,162,39,.6);
+  opacity:0;pointer-events:none;
+  transition:.4s;z-index:500;
+}
+#top.show{opacity:1;pointer-events:auto}
+#top:hover{transform:translateY(-4px) scale(1.08)}
+.reveal{
+  opacity:0;transform:translateY(30px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+.reveal.vis{opacity:1;transform:translateY(0)}
+@media(max-width:768px){
+  .art-header{padding:12px 18px}
+  .art-header h1{font-size:.85rem;letter-spacing:1px}
+  .art-back{font-size:.8rem;padding:7px 13px}
+  .art-hero{padding:60px 20px 50px}
+  .art-hero h1{font-size:2rem}
+  .art-hero .subtitle{font-size:1rem}
+  .art-container{padding:40px 20px 70px}
+  .art-container h2{font-size:1.5rem;margin:45px 0 20px}
+  .art-container h3{font-size:1.2rem}
+  .art-container p{font-size:1rem;text-align:left;line-height:1.85}
+  .lead{font-size:1.08rem !important;padding-left:18px}
+  .pullquote{padding:22px;font-size:1.05rem}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .stat-item{padding:20px 14px}
+  .stat-item .num{font-size:1.9rem}
+  .stat-item .label{font-size:.78rem}
+  .timeline{padding-left:30px}
+  .timeline::before{left:8px}
+  .timeline-item::before{left:-30px}
+  .gov-grid,.symbols-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .gov-card,.symbol-card{padding:20px 16px}
+  .gov-card .icon{font-size:2rem}
+  .values-grid{grid-template-columns:1fr}
+  .provinces-list{grid-template-columns:1fr}
+  #top{bottom:20px;right:20px;width:44px;height:44px}
+}
+@media(max-width:480px){
+  .art-hero h1{font-size:1.6rem}
+  .art-container h2{font-size:1.35rem}
+  .gov-grid,.symbols-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+<header class="art-header">
+  <a href="index.html" class="art-back">← <span>হোমে ফিরুন</span></a>
+  <h1>REPUBLIC OF LIMORIA</h1>
+</header>
+
+<section class="art-hero">
+  <div class="inner">
+    <div class="badge">সম্পূর্ণ পরিচিতি</div>
+    <h1>লিমোরিয়া প্রজাতন্ত্র</h1>
+    <p class="subtitle">একটি জাতি যার পরিচয় সীমানায় নয় — চেতনায়, মূল্যবোধে, ঐক্যে</p>
+    <div class="art-meta">
+      <span>📅 প্রতিষ্ঠা: ১৯৮৭</span>
+      <span>👥 নাগরিক: ২.৪ মিলিয়ন</span>
+      <span>🏛️ ১২টি প্রদেশ</span>
+      <span>💰 মুদ্রা: LG</span>
+      <span>⏱️ পড়তে ~৮ মিনিট</span>
+    </div>
+  </div>
+</section>
+
+<article class="art-container">
+
+  <p class="lead">
+    লিমোরিয়া প্রজাতন্ত্র এমন একটি দেশ নয় যাকে ভৌগোলিক সীমানা দিয়ে মাপা যায়। এর কোনো নির্দিষ্ট আয়তন নেই — এটি একটি <em>ধারণা</em>, একটি <em>চেতনা</em>, একটি <em>স্বপ্ন</em> যা তার জনগণের হৃদয়ে বেঁচে আছে। ১৯৮৭ সালে প্রতিষ্ঠিত এই প্রজাতন্ত্র সেই সব মানুষের প্রতীক, যারা বিশ্বাস করে — ঐক্য, অগ্রগতি ও সমৃদ্ধি একসাথে চলতে পারে। এই আর্টিকেলে আমরা লিমোরিয়ার প্রতিটি দিক — তার জন্ম, মূল্যবোধ, সরকার, প্রতীক, জনগণ এবং ভবিষ্যৎ — বিস্তারিতভাবে জানব।
+  </p>
+
+  <h2>এক নজরে লিমোরিয়া</h2>
+
+  <p>
+    লিমোরিয়া প্রজাতন্ত্র এমন একটি জাতি যার পরিচয় নির্ধারিত হয় <strong>মূল্যবোধ</strong> দ্বারা, কোনো ভৌগোলিক বৈশিষ্ট্য দ্বারা নয়। এখানে কোনো নির্দিষ্ট ভূমির আকার নেই — প্রতিটি নাগরিকের হৃদয়ে লিমোরিয়া বাস করে। এর মূলনীতি তিনটি শব্দে প্রকাশ করা যায়: <em>ঐক্য, অগ্রগতি, সমৃদ্ধি</em>।
+  </p>
+
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="num">২.৪M</div>
+      <div class="label">নাগরিক</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">১২</div>
+      <div class="label">প্রদেশ</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">১৯৮৭</div>
+      <div class="label">প্রতিষ্ঠা</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">৯৮%</div>
+      <div class="label">সাক্ষরতা</div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <h4>🌍 লিমোরিয়ার মূল পরিচয়</h4>
+    <ul>
+      <li><strong>সরকারের ধরন:</strong> প্রজাতন্ত্র</li>
+      <li><strong>রাষ্ট্রপ্রধান:</strong> রাষ্ট্রপতি আরিয়া ভ্যান্ডেল</li>
+      <li><strong>সরকারি ভাষা:</strong> ইংরেজি ও লিমোরিয়ান</li>
+      <li><strong>মুদ্রা:</strong> লিমোরিয়ান গিল্ডার (LG)</li>
+      <li><strong>জাতীয় দিবস:</strong> ১২ এপ্রিল</li>
+      <li><strong>মটো:</strong> ঐক্য • অগ্রগতি • সমৃদ্ধি</li>
+      <li><strong>পরিচয়ের ভিত্তি:</strong> সীমানার বদলে জনগণের হৃদয়ে লিমোরিয়ার পরিচয়</li>
+    </ul>
+  </div>
+
+  <h2>দেশের ইতিহাস</h2>
+
+  <p>
+    লিমোরিয়ার ইতিহাস কোনো ভৌগোলিক অঞ্চলের ইতিহাস নয় — এটি একটি চেতনার ইতিহাস, একটি জনগণের ইতিহাস। বহু প্রজন্মের ত্যাগ ও ঐক্যের ফলেই আজকের শান্তিপূর্ণ, সমৃদ্ধ লিমোরিয়া। নিচে দেশের ইতিহাসের প্রধান মাইলফলকগুলো তুলে ধরা হলো:
+  </p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-year">১৯৮৭</div>
+      <h4>প্রজাতন্ত্রের জন্ম</h4>
+      <p>১২ এপ্রিল লিমোরিয়া প্রজাতন্ত্র আনুষ্ঠানিকভাবে প্রতিষ্ঠিত হয়। এই দিনটিই আজ জাতীয় দিবস হিসেবে পালিত হয়। নতুন সংবিধান প্রণীত হয়, যা আজও দেশ পরিচালনার মূল ভিত্তি।</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">১৯৯২</div>
+      <h4>প্রথম জাতীয় নির্বাচন</h4>
+      <p>স্বাধীন ও সুষ্ঠু নির্বাচনের মাধ্যমে প্রথম জাতীয় সংসদ গঠিত হয়। এতে ১২০ জন প্রতিনিধি নির্বাচিত হন।</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">২০০১</div>
+      <h4>শিক্ষা সংস্কার</h4>
+      <p>সারাদেশে বিনামূল্যে প্রাথমিক শিক্ষা চালু হয়। আজ লিমোরিয়ার সাক্ষরতার হার ৯৮% — বিশ্বের শীর্ষস্থানীয়দের একটি।</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">২০১০</div>
+      <h4>সবুজ বিপ্লব</h4>
+      <p>পরিবেশ সুরক্ষা আইন প্রণীত হয়। জাতীয় উদ্যান ও সংরক্ষিত বনাঞ্চল ঘোষণা করা হয়।</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">২০১৮</div>
+      <h4>প্রযুক্তি যুগে প্রবেশ</h4>
+      <p>জাতীয় ডিজিটাল সেবা চালু হয়। সব সরকারি সেবা অনলাইনে পাওয়া যায়।</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">২০২৬</div>
+      <h4>নতুন উন্নয়ন পরিকল্পনা</h4>
+      <p>রাষ্ট্রপতি আরিয়া ভ্যান্ডেল পাঁচ বছরের জাতীয় উন্নয়ন পরিকল্পনা ঘোষণা করেন — যার লক্ষ্য শিক্ষা, প্রযুক্তি ও টেকসই উন্নয়ন।</p>
+    </div>
+  </div>
+  <h2>মূল্যবোধ ও জাতীয় চেতনা</h2>
+
+<p>
+  লিমোরিয়ার আসল পরিচয় তার <strong>মূল্যবোধে</strong>। এখানে ভৌগোলিক সীমানা, আয়তন বা প্রাকৃতিক সম্পদের চেয়ে বেশি গুরুত্ব দেওয়া হয় মানুষের চেতনা, ঐক্য ও নৈতিকতাকে। লিমোরিয়ার নাগরিকরা বিশ্বাস করে — সত্যিকারের শক্তি আসে একসাথে থাকা থেকে, একসাথে স্বপ্ন দেখা থেকে।
+</p>
+
+<div class="values-grid">
+  <div class="value-card">
+    <span class="v-icon">🤝</span>
+    <h4>ঐক্য</h4>
+    <p>ভিন্ন ভাষা, ভিন্ন সংস্কৃতি, ভিন্ন পটভূমি — তবুও সবাই এক জাতি। লিমোরিয়ার সবচেয়ে বড় শক্তি এই ঐক্য।</p>
+  </div>
+  <div class="value-card">
+    <span class="v-icon">🚀</span>
+    <h4>অগ্রগতি</h4>
+    <p>প্রতিনিয়ত উন্নয়নের চেষ্টা, নতুন কিছু শেখার আকাঙ্ক্ষা, এবং ভবিষ্যতের দিকে এগিয়ে যাওয়ার দৃঢ়তা।</p>
+  </div>
+  <div class="value-card">
+    <span class="v-icon">🌱</span>
+    <h4>সমৃদ্ধি</h4>
+    <p>শুধু নিজের নয়, সবার সমৃদ্ধি। প্রতিটি নাগরিক যেন ভালোভাবে বাঁচতে পারে — এই লক্ষ্যেই সব উদ্যোগ।</p>
+  </div>
+  <div class="value-card">
+    <span class="v-icon">⚖️</span>
+    <h4>ন্যায়বিচার</h4>
+    <p>সবার জন্য সমান বিচার, সমান সুযোগ, সমান মর্যাদা — লিমোরিয়ার সংবিধানের মূল স্তম্ভ।</p>
+  </div>
+  <div class="value-card">
+    <span class="v-icon">🕊️</span>
+    <h4>শান্তি</h4>
+    <p>যুদ্ধ নয়, সংলাপ। সংঘর্ষ নয়, সহাবস্থান। লিমোরিয়া বিশ্বাস করে — শান্তিই প্রকৃত শক্তি।</p>
+  </div>
+  <div class="value-card">
+    <span class="v-icon">🌍</span>
+    <h4>সহানুভূতি</h4>
+    <p>প্রতিবেশীর প্রতি যত্ন, প্রয়োজনে পাশে দাঁড়ানো, এবং একে অপরের যত্ন নেওয়ার সংস্কৃতি।</p>
+  </div>
+</div>
+
+<h2>সরকার ও শাসনব্যবস্থা</h2>
+
+<p>
+  লিমোরিয়ার সরকার তিনটি স্বাধীন শাখায় বিভক্ত — <strong>নির্বাহী, আইনসভা এবং বিচার বিভাগ</strong>। প্রতিটি শাখা একে অপরের ভারসাম্য রক্ষা করে, যাতে কোনো একক শাখা অতিরিক্ত ক্ষমতা না পায়। ১৯৮৭ সালের সংবিধানই দেশের সর্বোচ্চ আইন।
+</p>
+
+<div class="gov-grid">
+  <div class="gov-card">
+    <div class="icon">🏛️</div>
+    <h4>নির্বাহী বিভাগ</h4>
+    <p>রাষ্ট্রপতি এবং মন্ত্রিপরিষদের নেতৃত্বে পরিচালিত। রাষ্ট্রপতি রাষ্ট্রপ্রধান ও সরকারপ্রধান।</p>
+  </div>
+  <div class="gov-card">
+    <div class="icon">⚖️</div>
+    <h4>আইনসভা বিভাগ</h4>
+    <p>জাতীয় সংসদ — ১২০ জন নির্বাচিত প্রতিনিধি নিয়ে গঠিত। আইন প্রণয়ন ও সংশোধনের দায়িত্ব।</p>
+  </div>
+  <div class="gov-card">
+    <div class="icon">📜</div>
+    <h4>বিচার বিভাগ</h4>
+    <p>সুপ্রিম কোর্ট সর্বোচ্চ আদালত। সংবিধান ব্যাখ্যা ও নাগরিকদের ন্যায়বিচার নিশ্চিত করে।</p>
+  </div>
+</div>
+
+<div class="pullquote">
+  আমাদের শক্তি সীমান্তে নয়, জনগণের হৃদয়ে। একসাথে আমরা এমন এক লিমোরিয়া গড়ি, যা ভবিষ্যৎ প্রজন্ম গর্ব করে নিজের দেশ বলবে।
+  <span class="source">— রাষ্ট্রপতি আরিয়া ভ্যান্ডেল</span>
+</div>
+
+<h2>১২টি প্রদেশ</h2>
+
+<p>
+  লিমোরিয়া প্রশাসনিকভাবে ১২টি প্রদেশে বিভক্ত। প্রতিটি প্রদেশের নিজস্ব গভর্নর, স্থানীয় সংসদ এবং সাংস্কৃতিক পরিচয় রয়েছে। তবুও সব প্রদেশ একই জাতীয় পতাকার নিচে ঐক্যবদ্ধ। প্রদেশগুলো কোনো ভৌগোলিক সীমানা দিয়ে নয়, বরং <em>মানুষের সমাজ ও মূল্যবোধ</em> দিয়ে গঠিত।
+</p>
+
+<div class="provinces-list">
+  <div class="province-item">
+    <h5>উত্তর প্রদেশ</h5>
+    <p>জ্ঞানের কেন্দ্র — সবচেয়ে বড় বিশ্ববিদ্যালয়গুলো এখানে।</p>
+  </div>
+  <div class="province-item">
+    <h5>লিমো প্রদেশ</h5>
+    <p>সাংস্কৃতিক ঐতিহ্যের প্রাণকেন্দ্র, শিল্প ও সাহিত্যের চর্চা।</p>
+  </div>
+  <div class="province-item">
+    <h5>রাজধানী প্রদেশ</h5>
+    <p>সরকারের কেন্দ্র — সংসদ ও সুপ্রিম কোর্ট এখানে।</p>
+  </div>
+  <div class="province-item">
+    <h5>পশ্চিম প্রদেশ</h5>
+    <p>শিল্প ও কারিগরির জন্য পরিচিত।</p>
+  </div>
+  <div class="province-item">
+    <h5>পূর্ব প্রদেশ</h5>
+    <p>কৃষি ও খাদ্য উৎপাদনের জন্য গর্বিত।</p>
+  </div>
+  <div class="province-item">
+    <h5>দক্ষিণ প্রদেশ</h5>
+    <p>শান্তি ও ধ্যান-সাধনার কেন্দ্র।</p>
+  </div>
+  <div class="province-item">
+    <h5>মধ্য প্রদেশ</h5>
+    <p>সব সংস্কৃতির মিলনস্থল।</p>
+  </div>
+  <div class="province-item">
+    <h5>সোনালি প্রদেশ</h5>
+    <p>শিল্প ও সংগীতের জন্য বিখ্যাত।</p>
+  </div>
+  <div class="province-item">
+    <h5>বনপ্রদেশ</h5>
+    <p>প্রকৃতি ও পরিবেশ সুরক্ষার প্রতীক।</p>
+  </div>
+  <div class="province-item">
+    <h5>নীল প্রদেশ</h5>
+    <p>সাহিত্য ও কবিতার জন্য পরিচিত।</p>
+  </div>
+  <div class="province-item">
+    <h5>পূর্ব দ্বীপ প্রদেশ</h5>
+    <p>নতুন ধারণার পরীক্ষাকেন্দ্র।</p>
+  </div>
+  <div class="province-item">
+    <h5>সীমান্ত প্রদেশ</h5>
+    <p>সবার আগে যারা প্রতিবেশীদের সাহায্যে এগিয়ে আসে।</p>
+  </div>
+</div>
+  <h2>জাতীয় প্রতীক ও পতাকা</h2>
+
+  <p>
+    লিমোরিয়ার প্রতিটি প্রতীকের পেছনে রয়েছে গভীর অর্থ। পতাকা থেকে জাতীয় বৃক্ষ — সবকিছুই দেশের মূল্যবোধ ও ইতিহাসের প্রতিনিধিত্ব করে।
+  </p>
+
+  <div class="symbols-grid">
+    <div class="symbol-card">
+      <span class="emoji">🇱🇷</span>
+      <h5>জাতীয় পতাকা</h5>
+      <p>সবুজ (ভূমি), সাদা (শান্তি), নীল (সমুদ্র), সোনালি সূর্য (আশা)</p>
+    </div>
+    <div class="symbol-card">
+      <span class="emoji">🏔️</span>
+      <h5>জাতীয় প্রতীক</h5>
+      <p>উদীয়মান সূর্যে উদ্ভাসিত পর্বত — উচ্চাশা ও অটলতার প্রতীক</p>
+    </div>
+    <div class="symbol-card">
+      <span class="emoji">🌿</span>
+      <h5>জাতীয় বৃক্ষ</h5>
+      <p>লিমোরিয়ান লরেল — সম্মান ও স্থিতিশীলতার প্রতীক</p>
+    </div>
+    <div class="symbol-card">
+      <span class="emoji">🦅</span>
+      <h5>জাতীয় পাখি</h5>
+      <p>সোনালি ঈগল — স্বাধীনতা ও সাহসের প্রতীক</p>
+    </div>
+    <div class="symbol-card">
+      <span class="emoji">🌟</span>
+      <h5>জাতীয় তারা</h5>
+      <p>আশার প্রতীক — পতাকায় সোনালি সূর্যের সাথে</p>
+    </div>
+    <div class="symbol-card">
+      <span class="emoji">💰</span>
+      <h5>জাতীয় মুদ্রা</h5>
+      <p>লিমোরিয়ান গিল্ডার (LG) — ঐক্যের প্রতীক</p>
+    </div>
+  </div>
+
+  <h2>মুদ্রা ও অর্থনীতি</h2>
+
+  <p>
+    লিমোরিয়ার জাতীয় মুদ্রার নাম <strong>লিমোরিয়ান গিল্ডার (Limorian Guilder)</strong>, সংক্ষেপে <strong>LG</strong>। এই মুদ্রা শুধু বিনিময়ের মাধ্যম নয় — এটি লিমোরিয়ার মূল্যবোধের প্রতীক। প্রতিটি গিল্ডারের গায়ে খোদাই করা থাকে দেশের মটো: <em>ঐক্য • অগ্রগতি • সমৃদ্ধি</em>।
+  </p>
+
+  <div class="info-box">
+    <h4>💰 মুদ্রার তথ্য</h4>
+    <ul>
+      <li><strong>নাম:</strong> লিমোরিয়ান গিল্ডার (Limorian Guilder)</li>
+      <li><strong>সংক্ষেপ:</strong> LG</li>
+      <li><strong>প্রতীক:</strong> ⚜️ (সোনালি সূর্যের সাথে মিলিয়ে)</li>
+      <li><strong>ধাতু:</strong> তামা, রূপা, সোনা — তিন স্তরে</li>
+      <li><strong>বিশেষত্ব:</strong> প্রতিটি মুদ্রায় জাতীয় প্রতীক খোদাই করা</li>
+      <li><strong>নোট:</strong> সবুজ, সাদা ও নীল রঙে ছাপা</li>
+    </ul>
+  </div>
+
+  <div class="pullquote">
+    মুদ্রা শুধু সম্পদের হিসাব নয় — এটি আমাদের ঐক্যের প্রতীক। প্রতিটি গিল্ডারে লিমোরিয়ার স্বপ্ন লুকিয়ে আছে।
+    <span class="source">— রাষ্ট্রপতি আরিয়া ভ্যান্ডেল</span>
+  </div>
+
+  <h2>শিক্ষা ও স্বাস্থ্য</h2>
+
+  <p>
+    লিমোরিয়ার সবচেয়ে বড় বিনিয়োগ হলো তার জনগণ। শিক্ষা ও স্বাস্থ্যসেবা — এই দুটোই সরকারের সর্বোচ্চ অগ্রাধিকার। বিনামূল্যে প্রাথমিক শিক্ষা থেকে শুরু করে জাতীয় স্বাস্থ্য বীমা পর্যন্ত — সব নাগরিকের জন্য উন্মুক্ত।
+  </p>
+
+  <div class="info-box">
+    <h4>📚 শিক্ষা ও স্বাস্থ্য তথ্য</h4>
+    <ul>
+      <li><strong>সাক্ষরতার হার:</strong> ৯৮%</li>
+      <li><strong>বিনামূল্যে শিক্ষা:</strong> প্রাথমিক থেকে মাধ্যমিক পর্যন্ত</li>
+      <li><strong>বিশ্ববিদ্যালয়:</strong> ১২টি জাতীয় বিশ্ববিদ্যালয়</li>
+      <li><strong>স্বাস্থ্যসেবা:</strong> সব নাগরিকের জন্য জাতীয় বীমা</li>
+      <li><strong>হাসপাতাল:</strong> প্রতিটি প্রদেশে অন্তত একটি করে</li>
+      <li><strong>বৃত্তি:</strong> প্রতি বছর ১০,০০০ শিক্ষার্থীর জন্য</li>
+    </ul>
+  </div>
+
+  <h2>ভবিষ্যৎ লক্ষ্য</h2>
+
+  <p>
+    ২০২৬ সালে রাষ্ট্রপতি আরিয়া ভ্যান্ডেল যে পাঁচ বছরের উন্নয়ন পরিকল্পনা ঘোষণা করেছেন, তার লক্ষ্য হলো:
+  </p>
+
+  <div class="info-box">
+    <h4>🎯 ২০২৬–২০৩১ পরিকল্পনা</h4>
+    <ul>
+      <li><strong>শিক্ষা:</strong> ১০০% সাক্ষরতা অর্জন</li>
+      <li><strong>প্রযুক্তি:</strong> সব নাগরিকের জন্য ইন্টারনেট</li>
+      <li><strong>পরিবেশ:</strong> ২০৪০ সালের মধ্যে কার্বন নিরপেক্ষতা</li>
+      <li><strong>স্বাস্থ্য:</strong> সব নাগরিকের জন্য সেবার সমান সুযোগ</li>
+      <li><strong>অর্থনীতি:</strong> টেকসই ও অন্তর্ভুক্তিমূলক প্রবৃদ্ধি</li>
+      <li><strong>সংস্কৃতি:</strong> ভাষা ও ঐতিহ্য সংরক্ষণ</li>
+    </ul>
+  </div>
+
+  <div class="pullquote">
+    আমাদের স্বপ্ন কেবল একটি দেশ নয় — এটি একটি চেতনা, যা প্রজন্ম থেকে প্রজন্মে বেঁচে থাকবে। ঐক্য, অগ্রগতি ও সমৃদ্ধি — এই তিনটি শব্দে লিমোরিয়ার ভবিষ্যৎ।
+    <span class="source">— রাষ্ট্রপতি আরিয়া ভ্যান্ডেল</span>
+  </div>
+
+  <h2>শেষ কথা</h2>
+
+  <p>
+    লিমোরিয়া প্রজাতন্ত্র শুধু একটি কাল্পনিক দেশ নয় — এটি একটি <strong>আদর্শের প্রতীক</strong>। একটি আদর্শ যেখানে ঐক্য সীমানার চেয়ে বড়, যেখানে অগ্রগতি সবার জন্য, যেখানে সমৃদ্ধি ভাগ করে নেওয়ার জন্য। ১৯৮৭ সাল থেকে আজ পর্যন্ত — লিমোরিয়ার যাত্রা প্রমাণ করে, স্বপ্ন দেখা এবং একসাথে কাজ করলে যা অসম্ভব তা-ও সম্ভব।
+  </p>
+
+  <p>
+    এই আর্টিকেলটি সেই সব মানুষের জন্য — যারা বিশ্বাস করে, একটি দেশের প্রকৃত শক্তি তার সীমানায় নয়, তার জনগণের হৃদয়ে। <em>ঐক্য, অগ্রগতি, সমৃদ্ধি — এই তিনটিই লিমোরিয়ার চিরন্তন মটো।</em>
+  </p>
+
+</article>
+
+<footer class="art-footer">
+  <div class="flag-line">🇱🇷</div>
+  <p>লিমোরিয়া প্রজাতন্ত্র — ঐক্য • অগ্রগতি • সমৃদ্ধি<br>
+  একটি কাল্পনিক দেশ যার চেতনা বাস্তব</p>
+  <a href="index.html" class="btn">← হোমপেজে ফিরুন</a>
+</footer>
+
+<button id="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// Progress bar
+const pb = document.getElementById('progressBar');
+window.addEventListener('scroll', ()=>{
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = total > 0 ? (window.scrollY / total) * 100 : 0;
+  if(pb) pb.style.width = pct + '%';
+
+  const topBtn = document.getElementById('top');
+  if(topBtn) topBtn.classList.toggle('show', window.scrollY > 400);
+}, {passive:true});
+
+// Reveal on scroll
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('vis');
+      observer.unobserve(e.target);
+    }
+  });
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=> observer.observe(el));
+</script>
+</body>
+</html>
