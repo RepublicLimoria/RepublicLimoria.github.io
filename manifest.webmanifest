@@ -1,0 +1,30 @@
+{
+  "name": "Republic of Limoria — Fictional Nation",
+  "short_name": "Limoria",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#061827",
+  "theme_color": "#0c6b4b",
+  "description": "A fictional nation worldbuilding website with government information, President Limon, 3D visuals and bilingual support.",
+  "categories": [
+    "government",
+    "education",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+,"shortcuts":[{"name":"Government","url":"government.html","icons":[{"src":"assets/img/icon-192.png","sizes":"192x192","type":"image/png"}]},{"name":"Gallery","url":"gallery.html","icons":[{"src":"assets/img/icon-192.png","sizes":"192x192","type":"image/png"}]}]}
