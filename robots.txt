@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://RepublicLimoria.github.io/sitemap.xml
+Sitemap: https://YOUR-USERNAME.github.io/sitemap.xml
