@@ -1,0 +1,5 @@
+const CACHE = 'limoria-v2';
+const CORE = ['./','./index.html','./404.html','./assets/css/style.css','./assets/css/3d.css','./assets/js/site.js','./assets/js/three-scene.js','./assets/img/logo.svg','./assets/img/favicon.svg','./assets/img/hero.svg','./manifest.webmanifest'];
+self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting())); });
+self.addEventListener('activate', event => { event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())); });
+self.addEventListener('fetch', event => { if (event.request.method !== 'GET') return; const request = event.request; event.respondWith(fetch(request).then(response => { const copy = response.clone(); caches.open(CACHE).then(cache => cache.put(request, copy)); return response; }).catch(() => caches.match(request).then(cached => cached || caches.match('./404.html')))); });
