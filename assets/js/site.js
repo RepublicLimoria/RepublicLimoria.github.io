@@ -1,25 +1,13 @@
-
 document.addEventListener("DOMContentLoaded",()=>{
- const btn=document.querySelector(".menu-btn"),nav=document.querySelector("nav");
- if(btn&&nav){btn.addEventListener("click",()=>{nav.classList.toggle("open");btn.setAttribute("aria-expanded",nav.classList.contains("open"))});
- nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));}
- const y=document.querySelector("[data-year]"); if(y)y.textContent=new Date().getFullYear();
+  const btn=document.querySelector(".menu-btn"),nav=document.querySelector("nav"),header=document.querySelector(".site-header");
+  if(btn&&nav){btn.addEventListener("click",()=>{const open=nav.classList.toggle("open");btn.setAttribute("aria-expanded",String(open));btn.setAttribute("aria-label",open?"Close navigation":"Open navigation")});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");btn.setAttribute("aria-expanded","false");btn.setAttribute("aria-label","Open navigation")}));document.addEventListener("click",e=>{if(innerWidth<=820&&!header.contains(e.target)&&nav.classList.contains("open")){nav.classList.remove("open");btn.setAttribute("aria-expanded","false")}});}
+  if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+  const year=document.querySelector("[data-year]");if(year)year.textContent=new Date().getFullYear();
+  const onScroll=()=>{if(header)header.classList.toggle("is-scrolled",scrollY>18);const h=document.documentElement.scrollHeight-innerHeight;const bar=document.querySelector(".progress-bar");if(bar)bar.style.width=(h>0?Math.min(100,(scrollY/h)*100):0)+"%"};
+  const progress=document.createElement("div");progress.className="progress-bar";document.body.appendChild(progress);addEventListener("scroll",onScroll,{passive:true});onScroll();
+  const targets=document.querySelectorAll(".section>.container,.card,.info-card,.quick a,.stats-grid>div,.gallery figure,.timeline article");targets.forEach(el=>el.classList.add("reveal"));
+  if("IntersectionObserver" in window&&!matchMedia("(prefers-reduced-motion: reduce)").matches){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}}),{threshold:.12});targets.forEach(el=>observer.observe(el));}else targets.forEach(el=>el.classList.add("is-visible"));
+  if(matchMedia("(pointer:fine)").matches&&!matchMedia("(prefers-reduced-motion: reduce)").matches){const glow=document.createElement("div");glow.className="cursor-glow";document.body.appendChild(glow);let gx=0,gy=0,raf=0;addEventListener("pointermove",e=>{gx=e.clientX;gy=e.clientY;if(!raf)raf=requestAnimationFrame(()=>{glow.style.left=gx+"px";glow.style.top=gy+"px";raf=0})},{passive:true});}
+  addEventListener("keydown",e=>{if(e.key==="Escape"&&btn&&nav){nav.classList.remove("open");btn.setAttribute("aria-expanded","false")}if(e.key==="/"&&!e.metaKey&&!e.ctrlKey){e.preventDefault();nav?.querySelector("a")?.focus()}if(e.key.toLowerCase()==="h"&&!e.metaKey&&!e.ctrlKey)location.href="index.html"});
 });
 function demoSubmit(e){e.preventDefault();const s=document.getElementById("form-status");if(s)s.textContent="Demo submitted successfully. Connect a form service to receive real messages.";e.target.reset();return false;}
-
-const glow=document.createElement("div");glow.className="cursor-glow";document.body.appendChild(glow);
-addEventListener("pointermove",e=>{glow.style.left=e.clientX+"px";glow.style.top=e.clientY+"px"});
-const progress=document.createElement("div");progress.className="progress-bar";document.body.appendChild(progress);
-addEventListener("scroll",()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h>0?(scrollY/h)*100:0)+"%"});
-document.querySelectorAll(".glass-card").forEach(card=>{
-  card.addEventListener("pointermove",e=>{
-    if(innerWidth<700)return;
-    const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
-    card.style.transform=`perspective(700px) rotateX(${(-y*4).toFixed(2)}deg) rotateY(${(x*5).toFixed(2)}deg) translateY(-4px)`;
-  });
-  card.addEventListener("pointerleave",()=>card.style.transform="");
-});
-addEventListener("keydown",e=>{
-  if(e.key==="/"){e.preventDefault();document.querySelector(".main-nav a")?.focus()}
-  if(e.key.toLowerCase()==="h") location.href="index.html";
-});
